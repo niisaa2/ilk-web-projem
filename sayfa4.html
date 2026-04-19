@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staj Günlüğüm - Uygulamalar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6f0;
+            color: #4a4e69;
+        }
+
+        header {
+            background-color: #ccd5ae; /* Pastel adaçayı yeşili */
+            padding: 40px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            background-color: #d7e3fc;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a4e69;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover { color: #ffb5a7; }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        h2 { color: #6b705c; border-bottom: 2px solid #e9edc9; padding-bottom: 10px; }
+
+        /* Uygulama Kartları */
+        .uygulama-listesi {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .uygulama-kart {
+            background-color: #fefae0;
+            border: 2px solid #e9edc9;
+            border-radius: 20px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .uygulama-kart:hover {
+            background-color: #faedcd;
+            transform: translateY(-5px);
+            border-color: #d4a373;
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .uygulama-kart h3 { margin: 10px 0; color: #6b705c; }
+        .uygulama-kart p { font-size: 0.9em; line-height: 1.4; }
+
+        footer { text-align: center; padding: 20px; font-size: 0.9em; color: #9a8c98; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kullanılan Uygulamalar</h1>
+        <p>Stajda Deneyimlediğim Araçlar ve Yazılımlar</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="sayfa2.html">Neler Öğrendim?</a>
+        <a href="sayfa3.html">Teknik Detaylar</a>
+        <a href="sayfa4.html">Uygulamalar</a>
+        <a href="sayfa5.html">Galeri & Sonuç</a>
+    </nav>
+
+    <div class="container">
+        <h2>Araç Çantam</h2>
+        
+        <div class="uygulama-listesi">
+            <div class="uygulama-kart">
+                <span class="icon">💻</span>
+                <h3>Visual Studio</h3>
+                <p>C# projeleri geliştirmek ve mantıksal hataları (debugging) ayıklamak için kullandım.</p>
+            </div>
+
+            <div class="uygulama-kart">
+                <span class="icon">📝</span>
+                <h3>VS Code / Notepad++</h3>
+                <p>HTML ve CSS kodlarımı yazarken hızlı düzenleme yapmak için tercih ettim.</p>
+            </div>
+
+            <div class="uygulama-kart">
+                <span class="icon">📊</span>
+                <h3>MS Office Excel</h3>
+                <p>Veri analizi, bütçe tabloları ve iş akış çizelgeleri oluşturmak için kullandım.</p>
+            </div>
+
+            <div class="uygulama-kart">
+                <span class="icon">🗄️</span>
+                <h3>SQL Management</h3>
+                <p>Veritabanı yapılarını incelemek ve temel sorgular yazmak için deneyimledim.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Staj Günlüğü - Tüm Hakları Saklıdır.
+    </footer>
+
+</body>
+</html>

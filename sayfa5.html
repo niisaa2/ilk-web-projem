@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staj Günlüğüm - Galeri & Sonuç</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6f0;
+            color: #4a4e69;
+        }
+
+        header {
+            background-color: #f2cc8f; /* Pastel hardal/sarı tonu */
+            padding: 40px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            background-color: #d7e3fc;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a4e69;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover { color: #e07a5f; }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        h2 { color: #e07a5f; border-bottom: 2px solid #f2cc8f; padding-bottom: 10px; }
+
+        /* Kayan Fotoğraf Paneli (Slider) */
+        .slider-dis-cerceve {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            background: #eee;
+        }
+
+        .slider-ic-alan {
+            display: flex;
+            width: 300%; /* 3 resim için 300% */
+            animation: kaydirma 12s infinite ease-in-out;
+        }
+
+        .slider-ic-alan img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover; /* Resmi bozmadan sığdırır */
+        }
+
+        /* Kayma Animasyonu */
+        @keyframes kaydirma {
+            0% { transform: translateX(0); }
+            30% { transform: translateX(0); }
+            33% { transform: translateX(-33.33%); }
+            63% { transform: translateX(-33.33%); }
+            66% { transform: translateX(-66.66%); }
+            96% { transform: translateX(-66.66%); }
+            100% { transform: translateX(0); }
+        }
+
+        .sonuc-metni {
+            line-height: 1.8;
+            background-color: #f4f1de;
+            padding: 25px;
+            border-radius: 10px;
+            font-style: italic;
+        }
+
+        footer { text-align: center; padding: 20px; font-size: 0.9em; color: #9a8c98; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Anılar ve Değerlendirme</h1>
+        <p>Staj Yolculuğunun Özeti</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="sayfa2.html">Neler Öğrendim?</a>
+        <a href="sayfa3.html">Teknik Detaylar</a>
+        <a href="sayfa4.html">Uygulamalar</a>
+        <a href="sayfa5.html">Galeri & Sonuç</a>
+    </nav>
+
+    <div class="container">
+        <h2>Stajdan Kareler</h2>
+        
+        <div class="slider-dis-cerceve">
+            <div class="slider-ic-alan">
+                <img src="resim1.jpg" alt="Staj Fotoğrafı 1">
+                <img src="resim2.jpg" alt="Staj Fotoğrafı 2">

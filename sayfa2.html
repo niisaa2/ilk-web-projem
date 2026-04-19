@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staj Günlüğüm - Neler Öğrendim?</title>
+    <style>
+        /* Ana sayfa ile aynı tasarım dili */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6f0;
+            color: #4a4e69;
+        }
+
+        header {
+            background-color: #b8c0ff; /* Biraz daha farklı bir pastel mor-mavi */
+            padding: 40px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            background-color: #d7e3fc;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a4e69;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover { color: #ffb5a7; }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        h2 { color: #8a81ad; border-bottom: 2px solid #ffd1dc; padding-bottom: 10px; }
+
+        /* Öğrenilenler Listesi İçin Kart Tasarımı */
+        .ogrenim-karti {
+            background-color: #f8f9fa;
+            border-left: 5px solid #b8c0ff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 10px 10px 0;
+            transition: transform 0.2s;
+        }
+
+        .ogrenim-karti:hover {
+            transform: translateX(10px);
+            background-color: #f0f4ff;
+        }
+
+        .ogrenim-karti h3 { margin-top: 0; color: #6d6875; }
+
+        footer { text-align: center; padding: 20px; font-size: 0.9em; color: #9a8c98; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Neler Öğrendim?</h1>
+        <p>Staj Süresince Edindiğim Temel Kazanımlar</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="sayfa2.html">Neler Öğrendim?</a>
+        <a href="sayfa3.html">Teknik Detaylar</a>
+        <a href="sayfa4.html">Uygulamalar</a>
+        <a href="sayfa5.html">Galeri & Sonuç</a>
+    </nav>
+
+    <div class="container">
+        <h2>Temel Kazanımlarım</h2>
+        
+        <div class="ogrenim-karti">
+            <h3>Web Geliştirme Temelleri</h3>
+            <p>HTML yapısını kurmayı, etiketlerin işlevlerini ve CSS ile sayfalara nasıl estetik kazandırılacağını pratik yaparak öğrendim.</p>
+        </div>
+
+        <div class="ogrenim-karti">
+            <h3>Kurumsal İşleyiş ve İletişim</h3>
+            <p>Bir şirketin departmanları arasındaki hiyerarşiyi, iş akış süreçlerini ve profesyonel e-posta yazım kurallarını deneyimledim.</p>
+        </div>
+
+        <div class="ogrenim-karti">
+            <h3>Problem Çözme ve Analiz</h3>
+            <p>Yönetim Bilişim Sistemleri perspektifiyle, iş süreçlerindeki aksaklıkları teknolojik çözümlerle nasıl optimize edebileceğimizi inceledim.</p>
+        </div>
+
+        <div class="ogrenim-karti">
+            <h3>Ekip Çalışması</h3>
+            <p>Farklı birimlerden uzmanlarla toplantılara katılarak, bir projenin parçası olmanın sorumluluklarını kavradım.</p>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Staj Günlüğü - Tüm Hakları Saklıdır.
+    </footer>
+
+</body>
+</html>
